@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void stopService(View view) {
+    public void stopWifiService(View view) {
         Intent intent = new Intent(this, CollectWifiService.class);
         stopService(intent);
     }

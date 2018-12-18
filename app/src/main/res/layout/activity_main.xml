@@ -14,9 +14,9 @@
         android:text="Start collectiong Wifis" />
 
     <Button
+        android:id="@+id/buttonStop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Stop service"
-        android:id="@+id/buttonStop"
-        android:onClick="stopService" />
+        android:onClick="stopWifiService"
+        android:text="Stop service" />
 </LinearLayout>
