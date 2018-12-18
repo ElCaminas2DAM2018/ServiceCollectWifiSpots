@@ -22,17 +22,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void startService(View view) {
+    public void startWifiService(View view) {
 
-        if (ContextCompat.
-                checkSelfPermission
-                        (this, Manifest.permission.ACCESS_COARSE_LOCATION)
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{
                             Manifest.permission.ACCESS_COARSE_LOCATION},
                     MY_PERMISSIONS_REQUEST_SCAN);
             Toast.makeText(this, "Asked permision", Toast.LENGTH_SHORT).show();
-
         } else {
             Intent intent = new Intent(this, CollectWifiService.class);
             startService(intent);

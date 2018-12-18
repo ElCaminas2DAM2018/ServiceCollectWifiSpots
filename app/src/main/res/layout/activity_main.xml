@@ -7,11 +7,11 @@
     android:gravity="center_horizontal">
 
     <Button
+        android:id="@+id/buttonStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start collectiong Wifis"
-        android:id="@+id/buttonStart"
-        android:onClick="startService" />
+        android:onClick="startWifiService"
+        android:text="Start collectiong Wifis" />
 
     <Button
         android:layout_width="wrap_content"
